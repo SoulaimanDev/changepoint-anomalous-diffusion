@@ -1,0 +1,7 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.h5
+*.pt
+*.pth
+data_synthetic_changepoint_andi/*.h5

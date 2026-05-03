@@ -1,0 +1,153 @@
+{
+  "objectif": "Détection d'un point de changement dans des trajectoires de diffusion anormale.",
+  "contraintes_professeur": {
+    "longueur_trajectoire": 100,
+    "un_seul_point_de_changement": true,
+    "longueur_minimale_segment": 20,
+    "modeles_differents_dans_la_meme_trajectoire": true,
+    "nombre_transitions": "5 * 4 = 20",
+    "train": "20 * 10000 = 200000",
+    "validation": "20 * 1000 = 20000",
+    "test": "20 * 10000 = 200000"
+  },
+  "models": [
+    "ATTM",
+    "CTRW",
+    "FBM",
+    "LW",
+    "SBM"
+  ],
+  "model_to_id": {
+    "ATTM": 0,
+    "CTRW": 1,
+    "FBM": 2,
+    "LW": 3,
+    "SBM": 4
+  },
+  "alpha_ranges": {
+    "ATTM": [
+      0.05,
+      1.0
+    ],
+    "CTRW": [
+      0.05,
+      1.0
+    ],
+    "FBM": [
+      0.05,
+      1.95
+    ],
+    "LW": [
+      1.0,
+      2.0
+    ],
+    "SBM": [
+      0.05,
+      2.0
+    ]
+  },
+  "transitions": [
+    [
+      "ATTM",
+      "CTRW"
+    ],
+    [
+      "ATTM",
+      "FBM"
+    ],
+    [
+      "ATTM",
+      "LW"
+    ],
+    [
+      "ATTM",
+      "SBM"
+    ],
+    [
+      "CTRW",
+      "ATTM"
+    ],
+    [
+      "CTRW",
+      "FBM"
+    ],
+    [
+      "CTRW",
+      "LW"
+    ],
+    [
+      "CTRW",
+      "SBM"
+    ],
+    [
+      "FBM",
+      "ATTM"
+    ],
+    [
+      "FBM",
+      "CTRW"
+    ],
+    [
+      "FBM",
+      "LW"
+    ],
+    [
+      "FBM",
+      "SBM"
+    ],
+    [
+      "LW",
+      "ATTM"
+    ],
+    [
+      "LW",
+      "CTRW"
+    ],
+    [
+      "LW",
+      "FBM"
+    ],
+    [
+      "LW",
+      "SBM"
+    ],
+    [
+      "SBM",
+      "ATTM"
+    ],
+    [
+      "SBM",
+      "CTRW"
+    ],
+    [
+      "SBM",
+      "FBM"
+    ],
+    [
+      "SBM",
+      "LW"
+    ]
+  ],
+  "files": {
+    "test": "data_changepoint_prof\\test_L100_dim1.h5"
+  },
+  "noise_sigmas": [
+    0.1,
+    0.5,
+    1.0
+  ],
+  "h5_datasets": [
+    "X",
+    "cp",
+    "model1",
+    "model2",
+    "alpha1",
+    "alpha2",
+    "noise_sigma"
+  ],
+  "training_recommendation": {
+    "positions_input": "X shape = (N, 100, 1)",
+    "increments_input": "np.diff(X, axis=1) shape = (N, 99, 1)",
+    "target_for_increments": "cp - 1"
+  }
+}
