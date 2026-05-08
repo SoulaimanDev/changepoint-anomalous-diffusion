@@ -206,6 +206,5 @@ Test trajectories = 200,000
 
 For reproducibility, dataset paths should be adapted to the local environment. The recommended structure is to keep the folder `data_synthetic_changepoint_andi/` at the root of the project.
 
-A GPU is recommended for training the deep learning models on the full dataset.
 
 
