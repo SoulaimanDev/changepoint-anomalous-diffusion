@@ -1,4 +1,3 @@
-[README (1).md](https://github.com/user-attachments/files/27905327/README.1.md)
 # Changepoint Detection in Anomalous Diffusion Trajectories
 
 This repository contains a deep learning workflow for estimating changepoint positions in synthetic anomalous diffusion trajectories. Each trajectory is generated as a one-dimensional time series composed of two consecutive diffusion regimes. The learning task is to predict the temporal location where the first regime ends and the second one begins.
