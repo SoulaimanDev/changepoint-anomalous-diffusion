@@ -170,7 +170,9 @@ jupyter lab
 
 Run notebook 12 first to generate the three `L=200` HDF5 splits, followed by notebook 13 for training and evaluation. Existing datasets are never overwritten unless `TFM_OVERWRITE=1` is explicitly set. Notebook 13 uses the full 100-epoch configuration when `TFM_GLOBAL_SHORT_TEST` is unset or `0`; set it to `1` for a one-epoch integration check.
 
-In Colab, notebook 13 mounts Google Drive automatically and defaults to `/content/drive/MyDrive/TFM_L200`. Both local and Colab paths can be overridden without editing cells:
+Notebook 13 intentionally retains the outputs of the executed exploratory `FAST` run so that metrics, transition tables, and 19 generated figures remain visible on GitHub. That stored run used 10,000/2,000/4,000 train/validation/test samples and three epochs; its F1 score (`0.754853`) must not be confused with the thesis `GLOBAL` result.
+
+Local and Colab paths can be overridden without editing cells. In Colab, mount Google Drive first and point this variable to the project directory:
 
 ```powershell
 $env:TFM_PROJECT_ROOT = "D:\path\to\TFM_L200"
