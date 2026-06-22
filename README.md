@@ -87,6 +87,7 @@ Longer trajectories reduce relative localization error, but this is not a contro
 |   |-- 11_convtransformer_binary_detection_localization.ipynb
 |   |-- 12_synthetic_dataset_binary_changepoint_L200.ipynb
 |   `-- 13_convtransformer_L200_detection_localization.ipynb
+|-- results/L200/                            # Final GLOBAL CSV tables and 19 figures
 |-- scripts/
 |   |-- build_synthetic_changepoint_dataset.py
 |   `-- build_synthetic_with_without_changepoint_dx.py
@@ -94,7 +95,7 @@ Longer trajectories reduce relative localization error, but this is not a contro
 `-- requirements.txt
 ```
 
-Generated datasets (`*.h5`) and training outputs are intentionally excluded from Git. Dataset summary JSON files record the seed, package versions, shapes, valid index ranges, and observed noise distribution.
+Generated datasets (`*.h5`), models, and intermediate training outputs are intentionally excluded from Git. The selected final GLOBAL tables and figures are tracked under `results/L200/`. Dataset summary JSON files record the seed, package versions, shapes, valid index ranges, and observed noise distribution.
 
 ## Installation
 
@@ -161,18 +162,18 @@ TRAJECTORY_LENGTH=200 jupyter lab
 
 At `L=200`, notebook 11 automatically applies the documented batch size (`128`), negative-class weight (`1.0`), valid localization mask, and validation threshold grid (`0.05` to `0.50` in steps of `0.025`).
 
-The dedicated notebooks default to the safe `FAST` mode. For the complete `L=200` workflow in PowerShell:
+Notebook 12 defaults to the safe `FAST` generation mode. Notebook 13 defaults to `GLOBAL` because it retains the final executed run. For the complete `L=200` workflow in PowerShell:
 
 ```powershell
 $env:TFM_RUN_MODE = "GLOBAL"
 jupyter lab
 ```
 
-Run notebook 12 first to generate the three `L=200` HDF5 splits, followed by notebook 13 for training and evaluation. Existing datasets are never overwritten unless `TFM_OVERWRITE=1` is explicitly set. Notebook 13 uses the full 100-epoch configuration when `TFM_GLOBAL_SHORT_TEST` is unset or `0`; set it to `1` for a one-epoch integration check.
+Run notebook 12 first to generate the three `L=200` HDF5 splits, followed by notebook 13 for training and evaluation. Existing datasets are never overwritten unless `TFM_OVERWRITE=1` is explicitly set. Notebook 13 uses up to 100 epochs when `TFM_GLOBAL_SHORT_TEST` is unset or `0`; the retained run stopped early at epoch 61. Set `TFM_RUN_MODE=FAST` for a small test or `TFM_GLOBAL_SHORT_TEST=1` for a one-epoch integration check.
 
-Notebook 13 intentionally retains the outputs of the executed exploratory `FAST` run so that metrics, transition tables, and 19 generated figures remain visible on GitHub. That stored run used 10,000/2,000/4,000 train/validation/test samples and three epochs; its F1 score (`0.754853`) must not be confused with the thesis `GLOBAL` result.
+Notebook 13 intentionally retains the final `GLOBAL` outputs so that metrics, transition tables, and 19 generated figures remain visible on GitHub. The stored run used 200,000/20,000/200,000 train/validation/test samples and reproduces the thesis values: threshold `0.475`, accuracy `0.852365`, F1 `0.844046`, MAE `9.376101`, and RMSE `18.274097`.
 
-Local and Colab paths can be overridden without editing cells. In Colab, mount Google Drive first and point this variable to the project directory:
+Local and Colab paths can be overridden without editing cells. In Colab, notebook 13 mounts Google Drive automatically; point this variable to a different project directory when needed:
 
 ```powershell
 $env:TFM_PROJECT_ROOT = "D:\path\to\TFM_L200"

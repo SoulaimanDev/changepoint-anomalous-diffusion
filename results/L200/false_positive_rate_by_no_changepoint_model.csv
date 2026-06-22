@@ -1,0 +1,6 @@
+diffusion_model,total_no_changepoint,false_positives,false_positive_rate
+ATTM,20000,3728,0.18640
+CTRW,20000,2709,0.13545
+FBM,20000,1430,0.07150
+LW,20000,231,0.01155
+SBM,20000,1331,0.06655

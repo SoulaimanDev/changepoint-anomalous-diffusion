@@ -1,0 +1,13 @@
+metric,value
+selected_threshold,0.475000
+accuracy,0.852365
+precision,0.894449
+recall,0.799020
+f1_score,0.844046
+false_positive_rate,0.094290
+false_negative_rate,0.200980
+jaccard_coefficient,0.730172
+mae_all_changepoint,9.376101
+rmse_all_changepoint,18.274097
+mae_true_positive,4.812884
+rmse_true_positive,11.961947

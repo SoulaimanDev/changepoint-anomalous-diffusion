@@ -1,0 +1,10 @@
+{
+  "mode": "GLOBAL_RUN",
+  "trajectory_length": 200,
+  "train_samples": 200000,
+  "validation_samples": 20000,
+  "test_samples": 200000,
+  "epochs_completed": 61,
+  "source_notebook": "../../notebooks/13_convtransformer_L200_detection_localization.ipynb",
+  "figures_extracted": 19
+}
