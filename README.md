@@ -84,7 +84,9 @@ Longer trajectories reduce relative localization error, but this is not a contro
 |   |-- 08_lstm_binary_detection_localization.ipynb
 |   |-- 09_convlstm_binary_detection_localization.ipynb
 |   |-- 10_transformer_binary_detection_localization.ipynb
-|   `-- 11_convtransformer_binary_detection_localization.ipynb
+|   |-- 11_convtransformer_binary_detection_localization.ipynb
+|   |-- 12_synthetic_dataset_binary_changepoint_L200.ipynb
+|   `-- 13_convtransformer_L200_detection_localization.ipynb
 |-- scripts/
 |   |-- build_synthetic_changepoint_dataset.py
 |   `-- build_synthetic_with_without_changepoint_dx.py
@@ -142,7 +144,7 @@ Add `--dry-run` to either command for a small structural check before generating
 
 ## Run notebooks
 
-Run notebooks `01-06` for Protocol A and `07-11` for Protocol B. Paths are resolved relative to the repository; no user-specific directory is required.
+Run notebooks `01-06` for Protocol A and `07-11` for the general Protocol B comparison. Notebooks `12-13` provide the dedicated `L=200` generation and ConvTransformer analysis used for the revised thesis. Paths are resolved relative to the repository; no user-specific directory is required.
 
 Notebook 11 supports both thesis lengths. It defaults to `L=100`. Set the environment variable before starting Jupyter for `L=200`:
 
@@ -158,6 +160,21 @@ TRAJECTORY_LENGTH=200 jupyter lab
 ```
 
 At `L=200`, notebook 11 automatically applies the documented batch size (`128`), negative-class weight (`1.0`), valid localization mask, and validation threshold grid (`0.05` to `0.50` in steps of `0.025`).
+
+The dedicated notebooks default to the safe `FAST` mode. For the complete `L=200` workflow in PowerShell:
+
+```powershell
+$env:TFM_RUN_MODE = "GLOBAL"
+jupyter lab
+```
+
+Run notebook 12 first to generate the three `L=200` HDF5 splits, followed by notebook 13 for training and evaluation. Existing datasets are never overwritten unless `TFM_OVERWRITE=1` is explicitly set. Notebook 13 uses the full 100-epoch configuration when `TFM_GLOBAL_SHORT_TEST` is unset or `0`; set it to `1` for a one-epoch integration check.
+
+In Colab, notebook 13 mounts Google Drive automatically and defaults to `/content/drive/MyDrive/TFM_L200`. Both local and Colab paths can be overridden without editing cells:
+
+```powershell
+$env:TFM_PROJECT_ROOT = "D:\path\to\TFM_L200"
+```
 
 ## Verification
 
