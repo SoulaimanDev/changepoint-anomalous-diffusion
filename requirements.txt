@@ -1,0 +1,12 @@
+# Compatible environment for dataset generation and notebook execution.
+# Save `python -m pip freeze` alongside final artifacts for exact archival replay.
+andi-datasets>=2.1,<3
+h5py>=3.10,<4
+jupyterlab>=4.2,<5
+matplotlib>=3.8,<4
+numpy>=1.26,<3
+pandas>=2.1,<3
+scikit-learn>=1.4,<2
+tensorflow>=2.15,<3
+tqdm>=4.66,<5
+

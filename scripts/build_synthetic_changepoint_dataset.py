@@ -4,6 +4,7 @@
 import argparse
 import inspect
 import json
+from importlib.metadata import PackageNotFoundError, version
 from itertools import product
 from pathlib import Path
 
@@ -33,6 +34,13 @@ DRY_SPLIT_SIZES = {"train": 10, "val": 5, "test": 5}
 def load_generator():
     from andi_datasets.models_theory import models_theory
     return models_theory()
+
+
+def package_version(package_name):
+    try:
+        return version(package_name)
+    except PackageNotFoundError:
+        return "unknown"
 
 
 def parse_noise_levels(value):
@@ -186,7 +194,7 @@ def generate_split(split_name, trajectories_per_transition, generator, output_di
     return file_path
 
 
-def save_summary(output_dir, files, split_sizes, length, minimum_segment_length, dimension, noise_levels):
+def save_summary(output_dir, files, split_sizes, length, minimum_segment_length, dimension, noise_levels, seed):
     summary = {
         "objective": "Synthetic dataset for changepoint localization in anomalous diffusion trajectories",
         "trajectory_length": length,
@@ -199,10 +207,17 @@ def save_summary(output_dir, files, split_sizes, length, minimum_segment_length,
         "trajectories_per_transition": split_sizes,
         "total_trajectories": {name: len(TRANSITIONS) * size for name, size in split_sizes.items()},
         "noise_levels": noise_levels,
+        "seed": seed,
+        "software": {
+            "andi-datasets": package_version("andi-datasets"),
+            "numpy": np.__version__,
+            "pandas": pd.__version__,
+            "h5py": h5py.__version__,
+        },
         "files": {name: str(path) for name, path in files.items()},
         "training_input": {
-            "positions": "(N, 100, 1)",
-            "increments": "np.diff(X, axis=1)",
+            "positions": f"(N, {length}, {dimension})",
+            "increments": f"np.diff(X, axis=1), shape (N, {length - 1}, {dimension})",
             "increment_target": "cp - 1",
         },
     }
@@ -214,7 +229,12 @@ def parse_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", type=Path, default=Path("./data_synthetic_changepoint_andi"))
     parser.add_argument("--length", type=int, default=100)
-    parser.add_argument("--minimum-segment-length", type=int, default=20)
+    parser.add_argument(
+        "--minimum-segment-length",
+        type=int,
+        default=None,
+        help="Minimum segment length. Defaults to 20%% of --length (20 for L=100, 40 for L=200).",
+    )
     parser.add_argument("--dimension", type=int, default=1)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--noise", type=str, default="0.1,0.5,1.0")
@@ -225,6 +245,15 @@ def parse_arguments():
 
 def main():
     arguments = parse_arguments()
+    if arguments.length < 2:
+        raise ValueError("--length must be at least 2")
+    minimum_segment_length = (
+        arguments.minimum_segment_length
+        if arguments.minimum_segment_length is not None
+        else int(round(0.20 * arguments.length))
+    )
+    if minimum_segment_length < 1 or 2 * minimum_segment_length > arguments.length:
+        raise ValueError("--minimum-segment-length must be positive and at most half of --length")
     output_dir = arguments.output_dir
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -241,7 +270,7 @@ def main():
             generator,
             output_dir,
             arguments.length,
-            arguments.minimum_segment_length,
+            minimum_segment_length,
             arguments.dimension,
             noise_levels,
             arguments.seed + 1000 * offset,
@@ -253,9 +282,10 @@ def main():
         files,
         split_sizes,
         arguments.length,
-        arguments.minimum_segment_length,
+        minimum_segment_length,
         arguments.dimension,
         noise_levels,
+        arguments.seed,
     )
 
     print(json.dumps({name: str(path) for name, path in files.items()}, indent=2))

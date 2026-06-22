@@ -5,3 +5,5 @@ __pycache__/
 *.pt
 *.pth
 data_synthetic_changepoint_andi/*.h5
+data_synthetic_with_without_changepoint_dx/
+model_outputs/
