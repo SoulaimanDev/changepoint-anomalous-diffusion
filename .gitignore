@@ -5,3 +5,11 @@ __pycache__/
 *.pt
 *.pth
 data_synthetic_changepoint_andi/*.h5
+
+# Non-final diagnostic runs kept locally
+results/*_smoke*/
+results/convtransformer_v3_ablation/
+results/multiseed_v2_L100/
+results/multiseed_v2_L100_reduced10k/
+results/multiseed_v2_L100_reduced50k/
+results/pelt_baseline_L100_reduced_val2k_test20k/

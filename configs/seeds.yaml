@@ -1,0 +1,16 @@
+seeds:
+  - 1
+  - 2
+  - 3
+  - 42
+  - 123
+
+protocol:
+  name: multiseed_v2_L100
+  architectures:
+    - cnn_lstm
+    - convtransformer
+  threshold_selection: validation_only
+  final_evaluation: test_after_threshold_selection
+  report: mean_plus_minus_sample_std
+  test_used_for_model_selection: false

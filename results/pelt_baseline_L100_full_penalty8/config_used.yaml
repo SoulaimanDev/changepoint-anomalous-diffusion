@@ -1,0 +1,19 @@
+experiment_name: pelt_baseline_L100
+baseline: PELT
+length: 100
+dx_length: 99
+data_dir: C:\Users\chair\Downloads\changepoint_new_phase_files\data_synthetic_with_without_changepoint_dx
+feature: energy_abs
+window: 5
+min_size: 10
+jump: 5
+penalties:
+  - 8.0
+penalty_selection: validation_only
+test_used_for_penalty_selection: False
+validation_samples: 20000
+test_samples: 200000
+max_val_samples: None
+max_test_samples: None
+subset_seed: 2026
+missing_localization_penalty: 100.0

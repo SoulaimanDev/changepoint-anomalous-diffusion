@@ -1,0 +1,3 @@
+configuration,protocol,accuracy,precision,recall,f1,fpr,fnr,mae_tp,rmse_tp
+ConvTransformer-v2,main_single_execution_full_training,0.803675,0.818374,0.780590,0.799036,0.173240,0.219410,5.7797,9.6215
+PELT,classical_baseline_full_test,0.534055,0.5346175349,0.525930,0.5302381853,0.457820,0.474070,16.3165626526,22.3347563029

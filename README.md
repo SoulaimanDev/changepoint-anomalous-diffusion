@@ -102,7 +102,21 @@ See:
 | Transformer | 0.30 | 0.771165 | 0.809284 | 0.709540 | 0.756137 | 0.167210 | 0.290460 | 8.741436 | 12.530686 |
 | ConvTransformer-v2 | 0.30 | 0.803675 | 0.818374 | 0.780590 | 0.799036 | 0.173240 | 0.219410 | 7.536969 | 11.570613 |
 
-ConvTransformer-v2 has the best observed F1-score and the lowest localization error in this single main execution. However, the localization difference with CNN-LSTM is small, so the next methodological step is a multi-seed comparison.
+ConvTransformer-v2 has the best observed F1-score and the lowest localization error in this single main execution. However, the localization difference with CNN-LSTM is small and is not interpreted as conclusive.
+
+## Final thesis sources
+
+The final LaTeX sources are stored in `docs/thesis/`. They include:
+
+- the revised academic manuscript and bibliography;
+- the explicit link and citation for this repository;
+- the five-seed ConvTransformer-v2 robustness analysis;
+- the full-test PELT baseline;
+- a compact synthetic-data generation pseudocode;
+- four qualitative ConvTransformer-v2 examples;
+- a cautious exploratory discussion of ConvTransformer-v3a and v3b.
+
+ConvTransformer-v3a and v3b were evaluated only through preliminary validation runs. They are not presented as replacements for ConvTransformer-v2, and no v3 test metrics are reported.
 
 ## How to run the current notebooks
 
@@ -128,14 +142,20 @@ Run the notebooks in numerical order:
 
 Dataset paths may need to be adapted depending on the local execution environment.
 
-## Planned extensions
+## Completed and planned extensions
 
-The next development stages are:
+Completed:
 
-1. ConvTransformer-v3 with multi-channel input, soft localization labels and auxiliary diffusion-model heads.
-2. Ablation study on validation to select the best v3 variant.
-3. Multi-seed comparison between ConvTransformer-v2 and the selected ConvTransformer-v3.
-4. PELT baseline as a classical interpretable reference.
-5. Controlled `L=100` versus `L=200` comparison only if the training protocol is strictly identical.
+1. ConvTransformer-v3a multi-channel input pipeline.
+2. ConvTransformer-v3b soft-label localization pipeline.
+3. Five-seed ConvTransformer-v2 robustness study under a fixed reduced-training protocol.
+4. PELT baseline with validation-only penalty selection and full-test evaluation.
+
+Still planned:
+
+1. Full-training multi-seed repetitions.
+2. Validation-only completion of the v3 ablation before any final test evaluation.
+3. Controlled `L=100` versus `L=200` comparison with identical training rules.
+4. Comparison with a diffusion-specific method under an identical protocol.
 
 These extensions are not presented as an attempt to directly outperform AnDi methods. The objective is to build a more robust, reproducible and AnDi-inspired version under a clearly documented protocol.
