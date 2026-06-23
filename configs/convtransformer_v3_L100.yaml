@@ -1,0 +1,30 @@
+﻿experiment_name: convtransformer_v3a_L100
+ablation_version: v3a
+status: feature_pipeline_only_no_training_results
+length: 100
+seed: 42
+main_task: binary_detection_and_localization
+
+features:
+  use_multichannel: true
+  standardize_per_trajectory: true
+  eps: 1.0e-8
+  rolling_window: 5
+  padding: edge
+  lag1_initial_value: 0.0
+  output_dtype: float32
+  channels:
+    - dx_norm
+    - abs_dx
+    - dx_squared
+    - local_variance
+    - local_abs_mean
+    - lag1_product
+
+constraints:
+  uses_labels: false
+  uses_true_changepoint: false
+  uses_has_cp: false
+  uses_model_identity_labels: false
+  modifies_frozen_v2: false
+  produces_training_results: false
