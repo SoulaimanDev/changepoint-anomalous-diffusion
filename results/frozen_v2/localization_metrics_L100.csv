@@ -1,0 +1,5 @@
+architecture,notebook,length,mae_all,rmse_all,mae_tp,rmse_tp,run_count,seed_status
+LSTM,08_lstm_binary_detection_localization.ipynb,100,12.733092,16.350369,11.4039,15.0504,1,single_main_execution
+CNN-LSTM,09_convlstm_binary_detection_localization.ipynb,100,7.664480,11.918347,5.9136,9.9519,1,single_main_execution
+Transformer,10_transformer_binary_detection_localization.ipynb,100,8.741436,12.530686,6.6877,10.4040,1,single_main_execution
+ConvTransformer-v2,11_convtransformer_binary_detection_localization.ipynb,100,7.536969,11.570613,5.7797,9.6215,1,single_main_execution

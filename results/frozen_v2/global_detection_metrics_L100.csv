@@ -1,0 +1,5 @@
+architecture,notebook,length,threshold,accuracy,precision,recall,f1,fpr,fnr,run_count,seed_status
+LSTM,08_lstm_binary_detection_localization.ipynb,100,0.35,0.732765,0.734069,0.729980,0.732019,0.264450,0.270020,1,single_main_execution
+CNN-LSTM,09_convlstm_binary_detection_localization.ipynb,100,0.25,0.789130,0.797980,0.774280,0.785951,0.196020,0.225720,1,single_main_execution
+Transformer,10_transformer_binary_detection_localization.ipynb,100,0.30,0.771165,0.809284,0.709540,0.756137,0.167210,0.290460,1,single_main_execution
+ConvTransformer-v2,11_convtransformer_binary_detection_localization.ipynb,100,0.30,0.803675,0.818374,0.780590,0.799036,0.173240,0.219410,1,single_main_execution
