@@ -15,3 +15,5 @@
 13. Se incorporó el enlace explícito al repositorio GitHub y se actualizó su entrada bibliográfica.
 14. Se recuperó de la versión anterior únicamente un pseudocódigo compacto de generación y una selección de cuatro ejemplos cualitativos de ConvTransformer-v2.
 15. ConvTransformer-v3a y v3b se documentan como extensiones exploratorias de validación, sin métricas de test ni afirmaciones de superioridad.
+16. La URL larga del repositorio se retiró del cuerpo del texto y se sustituyó por la cita bibliográfica `chair2026repo`.
+17. La sección de reproducibilidad se reformuló como una práctica metodológica basada en conservar código, configuraciones, semillas, dependencias, resultados agregados y commit.

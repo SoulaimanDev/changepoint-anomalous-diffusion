@@ -13,3 +13,12 @@ results/multiseed_v2_L100/
 results/multiseed_v2_L100_reduced10k/
 results/multiseed_v2_L100_reduced50k/
 results/pelt_baseline_L100_reduced_val2k_test20k/
+
+# Local LaTeX build artifacts
+docs/thesis/main.aux
+docs/thesis/main.bbl
+docs/thesis/main.blg
+docs/thesis/main.log
+docs/thesis/main.out
+docs/thesis/main.pdf
+docs/thesis/main.toc

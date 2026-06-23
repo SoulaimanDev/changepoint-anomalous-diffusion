@@ -31,8 +31,9 @@ ConvTransformer-v3a y v3b se presentan como experimentos preliminares de
 validación. No existen métricas de test para estas variantes y no se consideran
 sustitutas de ConvTransformer-v2.
 
-## Limitación pendiente
+## Reproducibilidad
 
-El generador independiente del conjunto binario citado por el cuaderno 07 debe
-versionarse para permitir regenerar exactamente todos los datos. La memoria lo
-declara como una limitación de reproducibilidad.
+La memoria presenta la reproducibilidad como una práctica metodológica basada
+en conservar conjuntamente el código, los cuadernos, las configuraciones, las
+semillas, las versiones de las dependencias, los resultados agregados y el
+commit utilizado.

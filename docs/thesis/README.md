@@ -22,6 +22,10 @@ ConvTransformer-v2. Las variantes ConvTransformer-v3a y v3b se describen
 únicamente como extensiones exploratorias evaluadas en validación; no sustituyen
 el resultado principal de v2.
 
+En el cuerpo de la memoria, el repositorio se cita mediante la clave
+`chair2026repo`; la URL completa se reserva para la bibliografía para evitar
+cortes tipográficos en el texto principal.
+
 Compilación recomendada con Tectonic:
 
 ```powershell

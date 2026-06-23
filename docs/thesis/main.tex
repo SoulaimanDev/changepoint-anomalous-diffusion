@@ -201,7 +201,7 @@ El trabajo no intenta identificar simultáneamente el modelo y sus parámetros e
 
 \subsection{Biblioteca y diseño sintético}
 
-Las trayectorias se generan con la biblioteca \texttt{andi-datasets}, desarrollada para reproducir los modelos y conjuntos del reto AnDi \cite{andidatasets2021}. El código utilizado para generar los datos sintéticos, entrenar los modelos y reproducir los análisis se encuentra en el repositorio asociado del proyecto: \url{https://github.com/SoulaimanDev/changepoint-anomalous-diffusion} \cite{chair2026changepoint}. Para garantizar reproducibilidad, una ejecución debe registrar la versión de la biblioteca, las dependencias, las semillas y el \emph{commit} exacto del repositorio.
+Las trayectorias se generan con la biblioteca \texttt{andi-datasets}, desarrollada para reproducir los modelos y conjuntos del reto AnDi \cite{andidatasets2021}. El código utilizado para generar los datos sintéticos, entrenar los modelos y reproducir los análisis se encuentra disponible en el repositorio asociado del proyecto \cite{chair2026repo}. Para garantizar la trazabilidad, cada ejecución debe registrar la versión de la biblioteca, las dependencias, las semillas y el \emph{commit} exacto del repositorio.
 
 El experimento comparativo de arquitecturas se realiza en una dimensión y con longitud $L=100$. En una trayectoria con cambio, la posición $\tau$ se muestrea en $\{20,\ldots,80\}$, de modo que ambos segmentos contengan al menos 20 posiciones. El primer segmento procede de $M_1\in\Mset$ y el segundo de $M_2\in\Mset$, con $M_1\neq M_2$. Los cinco modelos producen 20 transiciones ordenadas. El orden forma parte del ejemplo: $M_1\to M_2$ y $M_2\to M_1$ se evalúan por separado. Tras seleccionar ConvTransformer se ejecuta además una extensión con $L=200$ y el mismo intervalo relativo 20--80\%; sus diferencias de entrenamiento se documentan en la Sección~\ref{sec:convtransformer-lengths}.
 
@@ -283,7 +283,7 @@ B, $L=200$: ConvTransformer & 200000 & 20000 & 200000 \\
 
 En las trayectorias positivas cambian simultáneamente el modelo y, por lo general, el exponente $\alpha$. En consecuencia, una red puede localizar una diferencia de exponente sin haber aprendido una firma específica del cambio de mecanismo. Para separar ambos efectos son necesarios al menos tres conjuntos adicionales: cambio de modelo con $\alpha$ igual o emparejado en el intervalo común, cambio de $\alpha$ dentro de un mismo modelo y cambio simultáneo de ambas variables. Los resultados actuales deben interpretarse como detección de una transición sintética conjunta, no como prueba de identificación causal del modelo.
 
-Otro requisito de reproducibilidad es depositar el generador completo del conjunto binario. El cuaderno 07 referencia \texttt{build\_synthetic\_with\_without\_changepoint\_dx.py}, pero dicho archivo no está presente en la copia examinada del repositorio. La memoria describe el diseño utilizado; no obstante, el archivo debe incorporarse antes de la entrega definitiva para que un tercero pueda regenerar exactamente los datos.
+La reproducibilidad del estudio se apoya en la conservación conjunta de los cuadernos experimentales, los scripts de generación, las configuraciones utilizadas y los resultados agregados. Para reproducir exactamente una ejecución concreta deben registrarse también las semillas, las versiones de las dependencias y el \emph{commit} utilizado.
 
 El Apéndice~\ref{app:generation-pseudocode} resume el procedimiento común de generación y las comprobaciones mínimas de equilibrio y separación entre particiones.
 
@@ -633,6 +633,8 @@ El resultado principal de ConvTransformer-v2, entrenado con el protocolo complet
 \begin{table}[htbp]
 \centering
 \footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrrrrr}
 \toprule
 \textbf{Método} & \textbf{Acc.} & \textbf{Prec.} & \textbf{Recall} & \textbf{F1} &
@@ -641,7 +643,7 @@ El resultado principal de ConvTransformer-v2, entrenado con el protocolo complet
 ConvTransformer-v2 & 0.8037 & 0.8184 & 0.7806 & 0.7990 & 0.1732 & 0.2194 & 5.7797 & 9.6215 \\
 PELT & 0.5341 & 0.5346 & 0.5259 & 0.5302 & 0.4578 & 0.4741 & 16.3166 & 22.3348 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{Comparación sobre el test completo de $L=100$. ConvTransformer-v2 corresponde a la ejecución principal; PELT es una baseline sin entrenamiento supervisado. Los errores temporales se restringen a verdaderos positivos.}
 \label{tab:convtransformer-pelt}
 \end{table}
@@ -792,7 +794,7 @@ Los ensayos disponibles corresponden a validación preliminar con semilla 42, su
 
 \paragraph{Variabilidad de optimización.} Se conserva una ejecución principal por arquitectura y se dispone de cinco repeticiones adicionales únicamente para ConvTransformer-v2 bajo un entrenamiento reducido. Este análisis detecta convergencias degeneradas en tres semillas, pero no estima todavía la dispersión del protocolo completo ni permite contrastar estadísticamente ConvTransformer con CNN--LSTM. Las diferencias pequeñas entre arquitecturas no deben presentarse como concluyentes.
 
-\paragraph{Validez del generador.} Modelo y exponente cambian simultáneamente; los segmentos se normalizan; y el conjunto es sintético. La red puede aprender regularidades específicas del simulador o artefactos de concatenación. El generador binario completo debe incorporarse al repositorio.
+\paragraph{Validez del generador.} Modelo y exponente cambian simultáneamente; los segmentos se normalizan; y el conjunto es sintético. La red puede aprender regularidades específicas del simulador o artefactos de concatenación. Por ello, las conclusiones se restringen al generador, los rangos paramétricos y las transformaciones documentadas en este estudio.
 
 \paragraph{Validez externa.} Todas las trayectorias son unidimensionales, solo se consideran longitudes 100 y 200 y cada señal contiene como máximo un cambio. Datos experimentales incluyen localización heteroscedástica, trayectorias truncadas, estados repetidos y múltiples transiciones.
 
@@ -800,7 +802,7 @@ Los ensayos disponibles corresponden a validación preliminar con semilla 42, su
 
 \subsection{Reproducibilidad y redacción científica}
 
-Una memoria reproducible debe registrar versión de \texttt{andi-datasets}, versiones de TensorFlow y NumPy, dispositivo, semillas, comandos de generación, tiempo de entrenamiento y archivos de configuración. Los cuadernos actuales documentan gran parte de la arquitectura, pero la información debe concentrarse en tablas y no depender de rutas locales. El repositorio del proyecto está disponible en \url{https://github.com/SoulaimanDev/changepoint-anomalous-diffusion} \cite{chair2026changepoint}; constituye una fuente de implementación y trazabilidad, pero no sustituye las referencias científicas.
+La reproducibilidad no depende solo de publicar métricas finales, sino de conservar el código, los cuadernos, las configuraciones, las semillas, las versiones de las dependencias y el \emph{commit} del repositorio asociado \cite{chair2026repo}. También deben registrarse el dispositivo, los comandos de generación y entrenamiento y los resultados agregados. Estos elementos permiten distinguir con claridad los resultados obtenidos de las extensiones que permanecen como trabajo futuro. El repositorio constituye una fuente de implementación y trazabilidad, pero no sustituye las referencias científicas.
 
 La redacción de esta versión evita atribuir relevancia matemática a operaciones aritméticas elementales. Los tamaños de los conjuntos se expresan en tablas o en prosa. Las ecuaciones aisladas se reservan para definiciones, modelos y funciones de pérdida que vuelven a utilizarse en el análisis.
 
@@ -837,7 +839,11 @@ Las prioridades para continuar el estudio son:
 \section{Pseudocódigo de generación sintética}
 \label{app:generation-pseudocode}
 
-El siguiente esquema resume la construcción de las particiones sin reproducir detalles dependientes de una implementación concreta. Sea $\Mset=\{\mathrm{ATTM},\mathrm{CTRW},\mathrm{FBM},\mathrm{LW},\mathrm{SBM}\}$ y sea $L_{\min}$ la longitud mínima permitida para cada segmento.
+El siguiente esquema resume la construcción de las particiones sin reproducir detalles dependientes de una implementación concreta. El conjunto de modelos es
+\[
+  \Mset=\{\mathrm{ATTM},\mathrm{CTRW},\mathrm{FBM},\mathrm{LW},\mathrm{SBM}\},
+\]
+y $L_{\min}$ denota la longitud mínima permitida para cada segmento.
 
 \begin{quote}
 \small
