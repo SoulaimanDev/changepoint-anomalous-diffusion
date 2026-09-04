@@ -1,0 +1,33 @@
+{
+  "freeze_name": "frozen_v2",
+  "created_on": "2026-06-23",
+  "repository_commit": "d9399d0f42e0e309ad3e3b7c006de3173c237c91",
+  "commit_message": "Revise README for clarity on project scope and methods",
+  "status": "reference baseline before ConvTransformer-v3",
+  "main_protocol": {
+    "length": 100,
+    "task": "binary changepoint detection and temporal localization",
+    "input": "normalized increments dx(t)",
+    "diffusion_models": ["ATTM", "CTRW", "FBM", "LW", "SBM"],
+    "architectures": ["LSTM", "CNN-LSTM", "Transformer", "ConvTransformer-v2"]
+  },
+  "source_files": {
+    "lstm": "notebooks/08_lstm_binary_detection_localization.ipynb",
+    "cnn_lstm": "notebooks/09_convlstm_binary_detection_localization.ipynb",
+    "transformer": "notebooks/10_transformer_binary_detection_localization.ipynb",
+    "convtransformer_v2": "notebooks/11_convtransformer_binary_detection_localization.ipynb",
+    "thesis_source_used_for_cross_check": "outputs/TFM_revisado/main.tex"
+  },
+  "frozen_tables": [
+    "global_detection_metrics_L100.csv",
+    "localization_metrics_L100.csv",
+    "fpr_no_changepoint_by_generator_L100.csv",
+    "convtransformer_length_summary_v2.csv"
+  ],
+  "limitations": [
+    "The v2 values correspond to a single main execution per architecture.",
+    "Mean and standard deviation across random seeds are not available in v2.",
+    "The ConvTransformer L=100 versus L=200 comparison is descriptive because some training rules differ.",
+    "Future experiments must not overwrite this folder."
+  ]
+}

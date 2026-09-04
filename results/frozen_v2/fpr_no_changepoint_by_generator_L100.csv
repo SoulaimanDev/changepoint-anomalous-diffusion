@@ -1,0 +1,5 @@
+architecture,length,attm,ctrw,fbm,lw,sbm,run_count,seed_status
+LSTM,100,0.4335,0.1496,0.2565,0.1561,0.3267,1,single_main_execution
+CNN-LSTM,100,0.2892,0.1083,0.2613,0.1105,0.2109,1,single_main_execution
+Transformer,100,0.2577,0.0814,0.2149,0.0793,0.2029,1,single_main_execution
+ConvTransformer-v2,100,0.2751,0.0915,0.2200,0.0793,0.2005,1,single_main_execution

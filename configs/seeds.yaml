@@ -1,0 +1,26 @@
+seeds:
+  - 1
+  - 2
+  - 3
+  - 42
+  - 123
+
+protocol:
+  name: multiseed_v2_L100
+  architectures:
+    - convtransformer
+  training_subset: 10000
+  validation_samples: 20000
+  test_samples: 200000
+  epochs: 20
+  batch_size: 1024
+  learning_rate: 1.0e-3
+  positive_class_weight: 1.0
+  negative_class_weight: 1.8
+  loss_weights:
+    - 2.0
+    - 1.0
+  threshold_selection: validation_only
+  final_evaluation: test_after_threshold_selection
+  report: mean_plus_minus_sample_std
+  test_used_for_model_selection: false

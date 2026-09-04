@@ -1,0 +1,2 @@
+baseline,split,penalty,accuracy,precision,recall,f1_score,false_positive_rate,false_negative_rate,jaccard_coefficient,true_negatives,false_positives,false_negatives,true_positives,all_changepoint_n,all_changepoint_mae,all_changepoint_rmse,true_positive_n,true_positive_mae,true_positive_rmse
+PELT,test,8.0,0.534055,0.5346175349428208,0.52593,0.5302381852551985,0.4578199999999542,0.4740699999999526,0.3607647034613079,54218,45782,47407,52593,100000,55.98836898803711,70.73228454589844,52593,16.31656265258789,22.33475630293127
