@@ -1,0 +1,35 @@
+freeze_name: frozen_v2
+created_on: 2026-06-23
+status: reference_baseline_before_convtransformer_v3
+
+data:
+  length_main: 100
+  length_extension: 200
+  input: normalized_dx
+  diffusion_models:
+    - ATTM
+    - CTRW
+    - FBM
+    - LW
+    - SBM
+
+architectures:
+  - name: LSTM
+    notebook: notebooks/08_lstm_binary_detection_localization.ipynb
+    frozen_result: results/frozen_v2/global_detection_metrics_L100.csv
+  - name: CNN-LSTM
+    notebook: notebooks/09_convlstm_binary_detection_localization.ipynb
+    note: original notebook keeps the convlstm filename, but the thesis uses CNN-LSTM
+    frozen_result: results/frozen_v2/global_detection_metrics_L100.csv
+  - name: Transformer
+    notebook: notebooks/10_transformer_binary_detection_localization.ipynb
+    frozen_result: results/frozen_v2/global_detection_metrics_L100.csv
+  - name: ConvTransformer-v2
+    notebook: notebooks/11_convtransformer_binary_detection_localization.ipynb
+    frozen_result: results/frozen_v2/global_detection_metrics_L100.csv
+
+limitations:
+  single_main_execution: true
+  multiseed_available: false
+  l100_l200_is_controlled_ablation: false
+  do_not_overwrite_frozen_results: true

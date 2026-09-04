@@ -1,0 +1,3 @@
+architecture,length,threshold,accuracy,precision,recall,f1,fpr,fnr,mae_all,rmse_all,nmae,nrmse,run_count,seed_status,comparison_type
+ConvTransformer-v2,100,0.300,0.8037,0.8184,0.7806,0.7990,0.1732,0.2194,7.5370,11.5706,0.0754,0.1157,1,single_main_execution,descriptive_not_controlled_ablation
+ConvTransformer-v2,200,0.475,0.8524,0.8944,0.7990,0.8440,0.0943,0.2010,9.3761,18.2741,0.0469,0.0914,1,single_main_execution,descriptive_not_controlled_ablation
