@@ -7,3 +7,26 @@ __pycache__/
 data_synthetic_changepoint_andi/*.h5
 data_synthetic_with_without_changepoint_dx/
 model_outputs/
+
+# Local campaign data, runtime artifacts and private material
+*.hdf5
+*.ckpt
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
+*_secret*
+*_token*
+/tmp/
+runtime/
+checkpoints/
+.venv/
+venv/
+.writer.lock
+billing.json
+/tfm_campaign_v2/
+/campaign_runpod_confirmatory*/
+/outputs/runpod_*/
+/outputs/TFM_RUNPOD_10PODS_LOCAL/

@@ -4,6 +4,12 @@ Reproducible code and frozen artifacts for the September 2026 Master's thesis on
 
 The scientific objective is deliberately narrow: given a one-dimensional trajectory generated from anomalous-diffusion processes, decide whether it contains one model transition and, when a transition is present, estimate its temporal position. The repository does not claim to identify the diffusion model or infer the anomalous exponent inside each segment.
 
+## Confirmatory multi-architecture campaign (September 2026)
+
+A separate confirmatory multi-seed campaign is in progress, according to the campaign owner's September 2026 record: LSTM, xLSTM, CNN-LSTM, Transformer and ConvTransformer, with 30 configurations per architecture and tuning seeds `11, 29, 47` (450 tuning runs). Selection uses validation only; test is reserved for final evaluation after all selection decisions are frozen. Execution is distributed over 10 shards, with preflight, GPU smoke validation, provenance checks and concurrent-writer locks.
+
+Definitive results will be published only after completion of the campaign and the explicitly approved final phase. See [the campaign record](docs/confirmatory_campaign_2026.md) and [infrastructure reproducibility](docs/runpod_reproducibility.md). This documentation update does not deploy code or operate the active campaign.
+
 ## Scientific provenance
 
 This project is built around the AnDi ecosystem, but it uses a thesis-specific supervised protocol rather than the original challenge tasks.
@@ -15,6 +21,10 @@ This project is built around the AnDi ecosystem, but it uses a thesis-specific s
 - Firbas et al. (2023), DOI `10.1088/1751-8121/acafb3`, is a domain-specific precedent for convolutional Transformer models in anomalous-diffusion characterization.
 
 The thesis CNN-LSTM and ConvTransformer models are adaptations for binary changepoint detection and localization. They are not exact reproductions of the Garibo-i-Orts or Firbas architectures.
+
+## Historical experiments
+
+The data descriptions, architecture details, result tables and exploratory studies below describe the historical experiments. Their numbers and reproduction commands are preserved; they are not results or launch instructions for the new 450-run confirmatory campaign.
 
 ## Data and protocols
 
