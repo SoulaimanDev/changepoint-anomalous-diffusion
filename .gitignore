@@ -30,3 +30,10 @@ billing.json
 /campaign_runpod_confirmatory*/
 /outputs/runpod_*/
 /outputs/TFM_RUNPOD_10PODS_LOCAL/
+
+# Backup archives and separate final-phase runtime artifacts
+*.tar.gz
+*.tgz
+final_results/
+.pytest_cache/
+*.log

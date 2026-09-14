@@ -1,0 +1,9 @@
+{
+  "reconstruction_record.json": "fde6130e81b57c0df26c54d9b05fe34925035e309be15cbfb23f88e4fac23b73",
+  "scientific_comparison.json": "501738ca1da99ded34fad37eeeb33085e14e796ee8e4ee90f6190a23256f2d2b",
+  "selected_configs.json": "ec01593b3abdd6efee45b503abf1844fc08020d2b89ebb04c490bf6cb9beba9f",
+  "tuning_merged.csv": "ce7a44be3141b4e6bdbec32035162d51296f25b9ae1a611c35df2bd49782b296",
+  "tuning_merged.manifest.json": "60f92bf4b802664fc780aa9317485b4a8615c5cb05c4fd677d6054a69a35192d",
+  "tuning_run_metrics.csv": "1580127a60ce245981a0201138ceeaef5e68cf01261384e8a9add0c6b79c65fe",
+  "tuning_summary.csv": "10e7fdabe71fb6a572cf43dececf76a7315515e2da443245037efb0f0cce594e"
+}

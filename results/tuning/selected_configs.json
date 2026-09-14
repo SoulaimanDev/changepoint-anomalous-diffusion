@@ -1,0 +1,3133 @@
+{
+  "campaign": "tfm_campaign_v2",
+  "choices": {
+    "cnn_lstm": {
+      "all_configuration_summaries": [
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_00",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6462183825469767,
+          "mean_fpr": 0.19073333333333334,
+          "mean_mae_all": 10.078819274902344,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_01",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7989024776492798,
+          "mean_fpr": 0.19633333333333333,
+          "mean_mae_all": 8.736950874328613,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_02",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7972530803916965,
+          "mean_fpr": 0.18993333333333337,
+          "mean_mae_all": 7.885389804840088,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_03",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7941703283998715,
+          "mean_fpr": 0.18866666666666665,
+          "mean_mae_all": 8.106328328450521,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_04",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6204276473230322,
+          "mean_fpr": 0.19633333333333333,
+          "mean_mae_all": 8.759339968363443,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_05",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7953881157049804,
+          "mean_fpr": 0.1951333333333333,
+          "mean_mae_all": 8.616886774698893,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_06",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.800410476840066,
+          "mean_fpr": 0.19226666666666667,
+          "mean_mae_all": 7.6136603355407715,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_07",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.36198148622321136,
+          "mean_fpr": 0.18653333333333333,
+          "mean_mae_all": 12.807244618733725,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_08",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7475080444537316,
+          "mean_fpr": 0.19866666666666669,
+          "mean_mae_all": 9.091534296671549,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_09",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7822859479712188,
+          "mean_fpr": 0.18813333333333335,
+          "mean_mae_all": 7.9618509610493975,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_10",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7921439738656079,
+          "mean_fpr": 0.1968,
+          "mean_mae_all": 8.786555926005045,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_11",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7579349732092089,
+          "mean_fpr": 0.19813333333333336,
+          "mean_mae_all": 9.040878613789877,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_12",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7525474452175608,
+          "mean_fpr": 0.19666666666666666,
+          "mean_mae_all": 9.146923700968424,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_13",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7984745522813679,
+          "mean_fpr": 0.19326666666666667,
+          "mean_mae_all": 8.561637242635092,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_14",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7850043915755839,
+          "mean_fpr": 0.19186666666666666,
+          "mean_mae_all": 9.27541446685791,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_15",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7809833469479135,
+          "mean_fpr": 0.17759999999999998,
+          "mean_mae_all": 7.735387802124023,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_16",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7903469337980189,
+          "mean_fpr": 0.1910666666666667,
+          "mean_mae_all": 8.094251950581869,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_17",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7967106058412469,
+          "mean_fpr": 0.19466666666666668,
+          "mean_mae_all": 7.8730441729227705,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_18",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6704645664372336,
+          "mean_fpr": 0.1896,
+          "mean_mae_all": 9.710219701131185,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_19",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7957793640738139,
+          "mean_fpr": 0.19506666666666664,
+          "mean_mae_all": 8.536992073059082,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_20",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7960252129343566,
+          "mean_fpr": 0.19626666666666667,
+          "mean_mae_all": 7.640714168548584,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_21",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.43873761166201297,
+          "mean_fpr": 0.18059999999999998,
+          "mean_mae_all": 11.886804262797037,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_22",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7688842610047698,
+          "mean_fpr": 0.1832,
+          "mean_mae_all": 8.805791536966959,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_23",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.5322751111049211,
+          "mean_fpr": 0.13186666666666666,
+          "mean_mae_all": 10.198086897532145,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_24",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6433393794114807,
+          "mean_fpr": 0.18906666666666663,
+          "mean_mae_all": 12.218639373779297,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_25",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7852479083831793,
+          "mean_fpr": 0.1968,
+          "mean_mae_all": 8.904520988464355,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_26",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7340051169180853,
+          "mean_fpr": 0.1978,
+          "mean_mae_all": 10.937689463297525,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_27",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7942476747569801,
+          "mean_fpr": 0.19726666666666667,
+          "mean_mae_all": 8.621146519978842,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_28",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7678438379897652,
+          "mean_fpr": 0.1962,
+          "mean_mae_all": 9.266982078552246,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_29",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7920317043298416,
+          "mean_fpr": 0.1890666666666667,
+          "mean_mae_all": 8.425642331441244,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        }
+      ],
+      "configuration_slot": "cfg_06",
+      "summary": {
+        "completed_feasible_seeds": [
+          11,
+          29,
+          47
+        ],
+        "configuration_slot": "cfg_06",
+        "eligible": true,
+        "expected_seeds": [
+          11,
+          29,
+          47
+        ],
+        "mean_f1": 0.800410476840066,
+        "mean_fpr": 0.19226666666666667,
+        "mean_mae_all": 7.6136603355407715,
+        "n_completed_feasible": 3,
+        "n_expected": 3,
+        "problems": []
+      }
+    },
+    "convtransformer": {
+      "all_configuration_summaries": [
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_00",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7833078434829893,
+          "mean_fpr": 0.19026666666666667,
+          "mean_mae_all": 9.050783157348633,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_01",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.0,
+          "mean_fpr": 0.0,
+          "mean_mae_all": 15.366399765014648,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_02",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.804661430123896,
+          "mean_fpr": 0.19433333333333333,
+          "mean_mae_all": 7.783255894978841,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_03",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8075259614210958,
+          "mean_fpr": 0.19573333333333334,
+          "mean_mae_all": 7.298088073730469,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_04",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7218004512855648,
+          "mean_fpr": 0.1962,
+          "mean_mae_all": 9.670266151428223,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_05",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8086311646132884,
+          "mean_fpr": 0.1978,
+          "mean_mae_all": 7.84982426961263,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_06",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8087632416747362,
+          "mean_fpr": 0.19099999999999998,
+          "mean_mae_all": 7.443846225738525,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_07",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.0,
+          "mean_fpr": 0.0,
+          "mean_mae_all": 15.366392135620117,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_08",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8041569265684179,
+          "mean_fpr": 0.19193333333333332,
+          "mean_mae_all": 7.601390520731608,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_09",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8094680763574957,
+          "mean_fpr": 0.19533333333333333,
+          "mean_mae_all": 7.559165795644124,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_10",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8060634246067956,
+          "mean_fpr": 0.19453333333333334,
+          "mean_mae_all": 7.694030125935872,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_11",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.806414566030882,
+          "mean_fpr": 0.19820000000000002,
+          "mean_mae_all": 7.805751323699951,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_12",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8097509375627459,
+          "mean_fpr": 0.19766666666666666,
+          "mean_mae_all": 7.431063175201416,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_13",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.0,
+          "mean_fpr": 0.0,
+          "mean_mae_all": 15.366399765014648,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_14",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8034214031824479,
+          "mean_fpr": 0.19386666666666671,
+          "mean_mae_all": 7.818214575449626,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_15",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.0,
+          "mean_fpr": 0.0,
+          "mean_mae_all": 15.366399765014648,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_16",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7945851442741928,
+          "mean_fpr": 0.1936,
+          "mean_mae_all": 7.961860338846843,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_17",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7993288993250162,
+          "mean_fpr": 0.19546666666666668,
+          "mean_mae_all": 8.121238072713217,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_18",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7509926528559556,
+          "mean_fpr": 0.19753333333333334,
+          "mean_mae_all": 10.161753336588541,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_19",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.0,
+          "mean_fpr": 0.0,
+          "mean_mae_all": 15.366399765014648,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_20",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8021748687084003,
+          "mean_fpr": 0.1902,
+          "mean_mae_all": 7.643365859985352,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_21",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.23409394037705922,
+          "mean_fpr": 0.06666666666666667,
+          "mean_mae_all": 14.850329717000326,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_22",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8062719844625937,
+          "mean_fpr": 0.19766666666666666,
+          "mean_mae_all": 7.503763993581136,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_23",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.0,
+          "mean_fpr": 0.0,
+          "mean_mae_all": 15.366399765014648,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_24",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7669190285946511,
+          "mean_fpr": 0.19526666666666667,
+          "mean_mae_all": 9.439494768778482,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_25",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7714278110170909,
+          "mean_fpr": 0.19440000000000002,
+          "mean_mae_all": 9.849418958028158,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_26",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7051552432633638,
+          "mean_fpr": 0.19633333333333333,
+          "mean_mae_all": 14.088199297587076,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_27",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8009731418810998,
+          "mean_fpr": 0.1920666666666667,
+          "mean_mae_all": 7.977835337320964,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_28",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8010168698764418,
+          "mean_fpr": 0.19506666666666664,
+          "mean_mae_all": 7.656928062438965,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_29",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8095543343232027,
+          "mean_fpr": 0.1916,
+          "mean_mae_all": 7.56594451268514,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        }
+      ],
+      "configuration_slot": "cfg_12",
+      "summary": {
+        "completed_feasible_seeds": [
+          11,
+          29,
+          47
+        ],
+        "configuration_slot": "cfg_12",
+        "eligible": true,
+        "expected_seeds": [
+          11,
+          29,
+          47
+        ],
+        "mean_f1": 0.8097509375627459,
+        "mean_fpr": 0.19766666666666666,
+        "mean_mae_all": 7.431063175201416,
+        "n_completed_feasible": 3,
+        "n_expected": 3,
+        "problems": []
+      }
+    },
+    "lstm": {
+      "all_configuration_summaries": [
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_00",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7902049418967548,
+          "mean_fpr": 0.1932,
+          "mean_mae_all": 10.026580810546875,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_01",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.795419170391216,
+          "mean_fpr": 0.19193333333333332,
+          "mean_mae_all": 9.648022333780924,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_02",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8006514266130286,
+          "mean_fpr": 0.19066666666666668,
+          "mean_mae_all": 9.60602887471517,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_03",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8003605756126309,
+          "mean_fpr": 0.19720000000000001,
+          "mean_mae_all": 9.457460403442383,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_04",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7976113609624175,
+          "mean_fpr": 0.19266666666666668,
+          "mean_mae_all": 9.756538391113281,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_05",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7945087531008045,
+          "mean_fpr": 0.19460000000000002,
+          "mean_mae_all": 10.046175956726074,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_06",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7972664355153163,
+          "mean_fpr": 0.19226666666666667,
+          "mean_mae_all": 9.52407423655192,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_07",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7227609834648857,
+          "mean_fpr": 0.18166666666666667,
+          "mean_mae_all": 11.775142033894857,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_08",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7401062629226249,
+          "mean_fpr": 0.19593333333333332,
+          "mean_mae_all": 12.601811091105143,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_09",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.785046169123079,
+          "mean_fpr": 0.1948,
+          "mean_mae_all": 10.16575558980306,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_10",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7753032101269134,
+          "mean_fpr": 0.19826666666666667,
+          "mean_mae_all": 10.277295430501303,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_11",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7891334676553879,
+          "mean_fpr": 0.19313333333333335,
+          "mean_mae_all": 9.525872866312662,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_12",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7989804670718207,
+          "mean_fpr": 0.1918,
+          "mean_mae_all": 9.383680979410807,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_13",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7981660538380974,
+          "mean_fpr": 0.19573333333333331,
+          "mean_mae_all": 9.493611971537272,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_14",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7895330982524689,
+          "mean_fpr": 0.19793333333333332,
+          "mean_mae_all": 10.014634768168131,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_15",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7947396336315441,
+          "mean_fpr": 0.1922,
+          "mean_mae_all": 9.693939208984375,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_16",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7849549856434707,
+          "mean_fpr": 0.1952,
+          "mean_mae_all": 9.893799463907877,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_17",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7966013260890178,
+          "mean_fpr": 0.19593333333333338,
+          "mean_mae_all": 9.501943270365397,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_18",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7676027164672633,
+          "mean_fpr": 0.18726666666666666,
+          "mean_mae_all": 9.976738929748535,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_19",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7964848287528116,
+          "mean_fpr": 0.19240000000000002,
+          "mean_mae_all": 9.65047804514567,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_20",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7979862006455091,
+          "mean_fpr": 0.1924,
+          "mean_mae_all": 9.493291854858398,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_21",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7940306855298257,
+          "mean_fpr": 0.1940666666666667,
+          "mean_mae_all": 9.812378565470377,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_22",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7937649239165516,
+          "mean_fpr": 0.19200000000000003,
+          "mean_mae_all": 9.484934171040853,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_23",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7906050012095905,
+          "mean_fpr": 0.19266666666666665,
+          "mean_mae_all": 9.690718650817871,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_24",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7258454209158987,
+          "mean_fpr": 0.19740000000000002,
+          "mean_mae_all": 12.298681577046713,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_25",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.795860202808938,
+          "mean_fpr": 0.1952666666666667,
+          "mean_mae_all": 9.261624018351236,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_26",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.742511972456127,
+          "mean_fpr": 0.19800000000000004,
+          "mean_mae_all": 13.06145445505778,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_27",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7951766644065882,
+          "mean_fpr": 0.19253333333333333,
+          "mean_mae_all": 9.51215902964274,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_28",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7614116713421858,
+          "mean_fpr": 0.19626666666666667,
+          "mean_mae_all": 10.360538800557455,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_29",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7929022419020173,
+          "mean_fpr": 0.19546666666666668,
+          "mean_mae_all": 9.86032231648763,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        }
+      ],
+      "configuration_slot": "cfg_02",
+      "summary": {
+        "completed_feasible_seeds": [
+          11,
+          29,
+          47
+        ],
+        "configuration_slot": "cfg_02",
+        "eligible": true,
+        "expected_seeds": [
+          11,
+          29,
+          47
+        ],
+        "mean_f1": 0.8006514266130286,
+        "mean_fpr": 0.19066666666666668,
+        "mean_mae_all": 9.60602887471517,
+        "n_completed_feasible": 3,
+        "n_expected": 3,
+        "problems": []
+      }
+    },
+    "transformer": {
+      "all_configuration_summaries": [
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_00",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6231374167688486,
+          "mean_fpr": 0.19140000000000001,
+          "mean_mae_all": 14.830645561218262,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_01",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.2582202512611816,
+          "mean_fpr": 0.13546666666666665,
+          "mean_mae_all": 15.270774205525717,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_02",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7965914886828083,
+          "mean_fpr": 0.19846666666666665,
+          "mean_mae_all": 7.926402568817139,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_03",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7172930813238342,
+          "mean_fpr": 0.19133333333333336,
+          "mean_mae_all": 9.699687639872232,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_04",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.4617683160817823,
+          "mean_fpr": 0.19666666666666668,
+          "mean_mae_all": 15.09773317972819,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_05",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7510464499699739,
+          "mean_fpr": 0.19873333333333335,
+          "mean_mae_all": 9.662556966145834,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_06",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.8022087901770522,
+          "mean_fpr": 0.18613333333333335,
+          "mean_mae_all": 7.887541135152181,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_07",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.0,
+          "mean_fpr": 0.0,
+          "mean_mae_all": 15.366399765014648,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_08",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6426258643876921,
+          "mean_fpr": 0.19720000000000001,
+          "mean_mae_all": 13.296148300170898,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_09",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.706531280145564,
+          "mean_fpr": 0.19566666666666666,
+          "mean_mae_all": 11.03332265218099,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_10",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6349289141567689,
+          "mean_fpr": 0.19499999999999998,
+          "mean_mae_all": 13.255528132120768,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_11",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6289908956103974,
+          "mean_fpr": 0.19606666666666664,
+          "mean_mae_all": 13.672414461771647,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_12",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6652501024676388,
+          "mean_fpr": 0.1966,
+          "mean_mae_all": 14.75944964090983,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_13",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.0,
+          "mean_fpr": 0.0,
+          "mean_mae_all": 15.366398811340332,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_14",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.5743003116426095,
+          "mean_fpr": 0.1940666666666667,
+          "mean_mae_all": 15.063580830891928,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_15",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.0,
+          "mean_fpr": 0.0,
+          "mean_mae_all": 15.36639436086019,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_16",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7281506091131041,
+          "mean_fpr": 0.19606666666666664,
+          "mean_mae_all": 10.333801905314127,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_17",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6765918114770488,
+          "mean_fpr": 0.19393333333333332,
+          "mean_mae_all": 14.199536641438803,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_18",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.43932502419462655,
+          "mean_fpr": 0.19899999999999998,
+          "mean_mae_all": 15.175037066141764,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_19",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.0,
+          "mean_fpr": 0.0,
+          "mean_mae_all": 15.366399765014648,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_20",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6283474734449868,
+          "mean_fpr": 0.19873333333333335,
+          "mean_mae_all": 14.482340494791666,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_21",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.4454764172266838,
+          "mean_fpr": 0.19133333333333336,
+          "mean_mae_all": 15.1619234085083,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_22",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7126604149111953,
+          "mean_fpr": 0.1956,
+          "mean_mae_all": 9.847217877705893,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_23",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.0,
+          "mean_fpr": 0.0,
+          "mean_mae_all": 15.366398811340332,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_24",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.4280813551388674,
+          "mean_fpr": 0.1978,
+          "mean_mae_all": 15.185798009236654,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_25",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7239421233859579,
+          "mean_fpr": 0.19673333333333334,
+          "mean_mae_all": 10.217408816019693,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_26",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.46684730629952514,
+          "mean_fpr": 0.19000000000000003,
+          "mean_mae_all": 15.138751029968262,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_27",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6726806503799009,
+          "mean_fpr": 0.19666666666666666,
+          "mean_mae_all": 12.93060302734375,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_28",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6034576413552484,
+          "mean_fpr": 0.19859999999999997,
+          "mean_mae_all": 14.363761266072592,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_29",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7279935927093911,
+          "mean_fpr": 0.19740000000000002,
+          "mean_mae_all": 9.912958780924479,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        }
+      ],
+      "configuration_slot": "cfg_06",
+      "summary": {
+        "completed_feasible_seeds": [
+          11,
+          29,
+          47
+        ],
+        "configuration_slot": "cfg_06",
+        "eligible": true,
+        "expected_seeds": [
+          11,
+          29,
+          47
+        ],
+        "mean_f1": 0.8022087901770522,
+        "mean_fpr": 0.18613333333333335,
+        "mean_mae_all": 7.887541135152181,
+        "n_completed_feasible": 3,
+        "n_expected": 3,
+        "problems": []
+      }
+    },
+    "xlstm": {
+      "all_configuration_summaries": [
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_00",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7043691103301045,
+          "mean_fpr": 0.1878,
+          "mean_mae_all": 13.664917627970377,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_01",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7002069796023379,
+          "mean_fpr": 0.1922,
+          "mean_mae_all": 14.457032521565756,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_02",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7880555894300695,
+          "mean_fpr": 0.19686666666666666,
+          "mean_mae_all": 10.114591916402182,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_03",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7307232062849885,
+          "mean_fpr": 0.19873333333333335,
+          "mean_mae_all": 13.570682843526205,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_04",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6417667828559631,
+          "mean_fpr": 0.18966666666666665,
+          "mean_mae_all": 14.388391812642416,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_05",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7343025813931078,
+          "mean_fpr": 0.19766666666666666,
+          "mean_mae_all": 14.397971153259277,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_06",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7679400118241114,
+          "mean_fpr": 0.1990666666666667,
+          "mean_mae_all": 11.308788617451986,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_07",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6796186621824782,
+          "mean_fpr": 0.19740000000000002,
+          "mean_mae_all": 14.909170150756836,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_08",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7789737654079069,
+          "mean_fpr": 0.19526666666666667,
+          "mean_mae_all": 10.24831517537435,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_09",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7940252554167891,
+          "mean_fpr": 0.19166666666666665,
+          "mean_mae_all": 9.782986640930176,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_10",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7927540802214331,
+          "mean_fpr": 0.1968,
+          "mean_mae_all": 9.603293100992838,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_11",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7892807789911221,
+          "mean_fpr": 0.1960666666666667,
+          "mean_mae_all": 9.776445388793945,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_12",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7871874835928843,
+          "mean_fpr": 0.19513333333333335,
+          "mean_mae_all": 9.939748764038086,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_13",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7181349977645856,
+          "mean_fpr": 0.1947333333333333,
+          "mean_mae_all": 14.363729159037272,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_14",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7816440801423007,
+          "mean_fpr": 0.19353333333333333,
+          "mean_mae_all": 10.706351280212402,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_15",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6986110311129753,
+          "mean_fpr": 0.19346666666666668,
+          "mean_mae_all": 14.075006484985352,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_16",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7856756744487847,
+          "mean_fpr": 0.19473333333333334,
+          "mean_mae_all": 10.131744384765625,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_17",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7735243470288302,
+          "mean_fpr": 0.19313333333333335,
+          "mean_mae_all": 11.552888870239258,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_18",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7810796688647144,
+          "mean_fpr": 0.19073333333333334,
+          "mean_mae_all": 9.905593872070312,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_19",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7212313942880288,
+          "mean_fpr": 0.1964,
+          "mean_mae_all": 14.408742586771647,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_20",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7767763564087596,
+          "mean_fpr": 0.1960666666666667,
+          "mean_mae_all": 10.54665756225586,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_21",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6781506932352368,
+          "mean_fpr": 0.19699999999999998,
+          "mean_mae_all": 14.642645835876465,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_22",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7667518309734284,
+          "mean_fpr": 0.19326666666666667,
+          "mean_mae_all": 11.034978866577148,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_23",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.6610949600102919,
+          "mean_fpr": 0.19066666666666668,
+          "mean_mae_all": 14.442533810933432,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_24",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7495581686140541,
+          "mean_fpr": 0.19746666666666668,
+          "mean_mae_all": 11.391895294189453,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_25",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7619232826801304,
+          "mean_fpr": 0.19100000000000003,
+          "mean_mae_all": 11.135490735371908,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_26",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7573398445464616,
+          "mean_fpr": 0.1976,
+          "mean_mae_all": 11.482104301452637,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_27",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7241312392503131,
+          "mean_fpr": 0.19373333333333334,
+          "mean_mae_all": 13.123971621195475,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_28",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7557831857998751,
+          "mean_fpr": 0.19686666666666666,
+          "mean_mae_all": 11.077754656473795,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        },
+        {
+          "completed_feasible_seeds": [
+            11,
+            29,
+            47
+          ],
+          "configuration_slot": "cfg_29",
+          "eligible": true,
+          "expected_seeds": [
+            11,
+            29,
+            47
+          ],
+          "mean_f1": 0.7461629339987926,
+          "mean_fpr": 0.18739999999999998,
+          "mean_mae_all": 12.856847763061523,
+          "n_completed_feasible": 3,
+          "n_expected": 3,
+          "problems": []
+        }
+      ],
+      "configuration_slot": "cfg_09",
+      "summary": {
+        "completed_feasible_seeds": [
+          11,
+          29,
+          47
+        ],
+        "configuration_slot": "cfg_09",
+        "eligible": true,
+        "expected_seeds": [
+          11,
+          29,
+          47
+        ],
+        "mean_f1": 0.7940252554167891,
+        "mean_fpr": 0.19166666666666665,
+        "mean_mae_all": 9.782986640930176,
+        "n_completed_feasible": 3,
+        "n_expected": 3,
+        "problems": []
+      }
+    }
+  },
+  "code_hash": "a91e1ddc8c99c8398f679ed10f5f8b057b433f622378ab85d8f5cbaa136094c9",
+  "merged": "C:\\Users\\chair\\Documents\\Codex\\2026-09-06\\files-mentioned-by-the-user-are\\outputs\\complete_450_tuning_audit\\reconstructed\\reports\\tuning_merged.csv",
+  "merged_sha256": "ce7a44be3141b4e6bdbec32035162d51296f25b9ae1a611c35df2bd49782b296"
+}

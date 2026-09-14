@@ -4,11 +4,21 @@ Reproducible code and frozen artifacts for the September 2026 Master's thesis on
 
 The scientific objective is deliberately narrow: given a one-dimensional trajectory generated from anomalous-diffusion processes, decide whether it contains one model transition and, when a transition is present, estimate its temporal position. The repository does not claim to identify the diffusion model or infer the anomalous exponent inside each segment.
 
-## Confirmatory multi-architecture campaign (September 2026)
+## Complete tuning campaign — 450 runs
 
-A separate confirmatory multi-seed campaign is in progress, according to the campaign owner's September 2026 record: LSTM, xLSTM, CNN-LSTM, Transformer and ConvTransformer, with 30 configurations per architecture and tuning seeds `11, 29, 47` (450 tuning runs). Selection uses validation only; test is reserved for final evaluation after all selection decisions are frozen. Execution is distributed over 10 shards, with preflight, GPU smoke validation, provenance checks and concurrent-writer locks.
+The verified backup dated 14 September 2026 contains **450/450 completed tuning runs, 0 failed**: LSTM, xLSTM, CNN-LSTM, Transformer and ConvTransformer; 30 configurations per architecture and three tuning seeds `11, 29, 47`. See [complete tuning results and methodology](results/tuning/README.md) and [provenance](results/tuning/PROVENANCE.md).
 
-Definitive results will be published only after completion of the campaign and the explicitly approved final phase. See [the campaign record](docs/confirmatory_campaign_2026.md) and [infrastructure reproducibility](docs/runpod_reproducibility.md). This documentation update does not deploy code or operate the active campaign.
+| Architecture | Selected config | Mean validation F1 | Mean MAE_all | Mean FPR | Valid seeds |
+|---|---|---:|---:|---:|---:|
+| LSTM | cfg_02 | 0.8006514266130286 | 9.60602887471517 | 0.19066666666666668 | 3 |
+| xLSTM | cfg_09 | 0.7940252554167891 | 9.782986640930176 | 0.19166666666666665 | 3 |
+| CNN-LSTM | cfg_06 | 0.800410476840066 | 7.6136603355407715 | 0.19226666666666667 | 3 |
+| Transformer | cfg_06 | 0.8022087901770522 | 7.887541135152181 | 0.18613333333333335 | 3 |
+| ConvTransformer | cfg_12 | 0.8097509375627459 | 7.431063175201416 | 0.19766666666666666 | 3 |
+
+These are **validation/tuning results**, used to select one configuration per architecture. They are **not final test results**. The separate 25-run final phase and independent test evaluation are not included. No final test data were used during tuning.
+
+The earlier [campaign record](docs/confirmatory_campaign_2026.md), [infrastructure documentation](docs/runpod_reproducibility.md) and [interim results directory](results/confirmatory_2026/README.md) preserve historical context; earlier progress snapshots are superseded by the completed tuning state above. Historical experimental results below remain unchanged.
 
 ## Scientific provenance
 

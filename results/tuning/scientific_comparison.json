@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "comparison": "Exact equality of parsed numeric values; no tolerance, rounding or manual correction",
+  "merged_rows": 450,
+  "comparisons": [
+    {
+      "architecture": "lstm",
+      "field": "configuration_slot",
+      "expected": "cfg_02",
+      "actual": "cfg_02",
+      "exact_match": true
+    },
+    {
+      "architecture": "lstm",
+      "field": "mean_f1",
+      "expected": 0.8006514266130286,
+      "actual": 0.8006514266130286,
+      "exact_match": true
+    },
+    {
+      "architecture": "lstm",
+      "field": "mean_mae_all",
+      "expected": 9.60602887471517,
+      "actual": 9.60602887471517,
+      "exact_match": true
+    },
+    {
+      "architecture": "lstm",
+      "field": "mean_fpr",
+      "expected": 0.19066666666666668,
+      "actual": 0.19066666666666668,
+      "exact_match": true
+    },
+    {
+      "architecture": "xlstm",
+      "field": "configuration_slot",
+      "expected": "cfg_09",
+      "actual": "cfg_09",
+      "exact_match": true
+    },
+    {
+      "architecture": "xlstm",
+      "field": "mean_f1",
+      "expected": 0.7940252554167891,
+      "actual": 0.7940252554167891,
+      "exact_match": true
+    },
+    {
+      "architecture": "xlstm",
+      "field": "mean_mae_all",
+      "expected": 9.782986640930176,
+      "actual": 9.782986640930176,
+      "exact_match": true
+    },
+    {
+      "architecture": "xlstm",
+      "field": "mean_fpr",
+      "expected": 0.19166666666666665,
+      "actual": 0.19166666666666665,
+      "exact_match": true
+    },
+    {
+      "architecture": "cnn_lstm",
+      "field": "configuration_slot",
+      "expected": "cfg_06",
+      "actual": "cfg_06",
+      "exact_match": true
+    },
+    {
+      "architecture": "cnn_lstm",
+      "field": "mean_f1",
+      "expected": 0.800410476840066,
+      "actual": 0.800410476840066,
+      "exact_match": true
+    },
+    {
+      "architecture": "cnn_lstm",
+      "field": "mean_mae_all",
+      "expected": 7.6136603355407715,
+      "actual": 7.6136603355407715,
+      "exact_match": true
+    },
+    {
+      "architecture": "cnn_lstm",
+      "field": "mean_fpr",
+      "expected": 0.19226666666666667,
+      "actual": 0.19226666666666667,
+      "exact_match": true
+    },
+    {
+      "architecture": "transformer",
+      "field": "configuration_slot",
+      "expected": "cfg_06",
+      "actual": "cfg_06",
+      "exact_match": true
+    },
+    {
+      "architecture": "transformer",
+      "field": "mean_f1",
+      "expected": 0.8022087901770522,
+      "actual": 0.8022087901770522,
+      "exact_match": true
+    },
+    {
+      "architecture": "transformer",
+      "field": "mean_mae_all",
+      "expected": 7.887541135152181,
+      "actual": 7.887541135152181,
+      "exact_match": true
+    },
+    {
+      "architecture": "transformer",
+      "field": "mean_fpr",
+      "expected": 0.18613333333333335,
+      "actual": 0.18613333333333335,
+      "exact_match": true
+    },
+    {
+      "architecture": "convtransformer",
+      "field": "configuration_slot",
+      "expected": "cfg_12",
+      "actual": "cfg_12",
+      "exact_match": true
+    },
+    {
+      "architecture": "convtransformer",
+      "field": "mean_f1",
+      "expected": 0.8097509375627459,
+      "actual": 0.8097509375627459,
+      "exact_match": true
+    },
+    {
+      "architecture": "convtransformer",
+      "field": "mean_mae_all",
+      "expected": 7.431063175201416,
+      "actual": 7.431063175201416,
+      "exact_match": true
+    },
+    {
+      "architecture": "convtransformer",
+      "field": "mean_fpr",
+      "expected": 0.19766666666666666,
+      "actual": 0.19766666666666666,
+      "exact_match": true
+    }
+  ],
+  "differences": []
+}
