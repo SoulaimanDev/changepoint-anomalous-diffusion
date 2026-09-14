@@ -1,3 +1,7 @@
+# Historical interim publication record
+
+**Superseded for tuning status:** the complete 450/450 tuning results are now in [results/tuning](../tuning/README.md). The text below records an earlier state, including its then-current authorization status; it is not a statement about current final-phase authorization. Independent final/test results are not included in this update.
+
 # Confirmatory results — publication pending
 
 The September 2026 campaign is in progress according to the campaign owner's record. This directory intentionally contains no performance results or fabricated final artifacts. Historical results elsewhere in the repository remain separate.

@@ -1,0 +1,18 @@
+{
+  "campaign": "tfm_campaign_v2",
+  "code_hash": "a91e1ddc8c99c8398f679ed10f5f8b057b433f622378ab85d8f5cbaa136094c9",
+  "csv_sha256": "ce7a44be3141b4e6bdbec32035162d51296f25b9ae1a611c35df2bd49782b296",
+  "source_campaign": "C:\\Users\\chair\\Documents\\Codex\\2026-09-06\\files-mentioned-by-the-user-are\\outputs\\complete_450_tuning_audit\\backup\\tfm_campaign_v2",
+  "sources": {
+    "results/shard_00/execution_registry.csv": "7e5c6eaf60b0eadb140cf4950fae78de88a9d94724f8b7017b11304dcdb6be6f",
+    "results/shard_01/execution_registry.csv": "5b56c58a2e5f50ca020d03272399373805f25ffef6d90ec1e12874462adb5c1f",
+    "results/shard_02/execution_registry.csv": "38c776d9a3a0d069c9e30921f817733f504d612d32aa6ffeb377e56fa2bdab1f",
+    "results/shard_03/execution_registry.csv": "43c0d69c4267ac0d37ddc5841a69a1f9da28b973bf0629654cd5b0cc61577ae6",
+    "results/shard_04/execution_registry.csv": "ece70c34568d95bf661563c30387aae658bf6efcfe680cff13f49d6a85f42cc6",
+    "results/shard_05/execution_registry.csv": "c5270a4e3f7b495e0e5fb384ef7e7acd672a0d4e4ef3b8054d7d42d09046823e",
+    "results/shard_06/execution_registry.csv": "232c530f041f68b9823db57175eb6bced91343c61c6da0c464bfb0d4fc0fde75",
+    "results/shard_07/execution_registry.csv": "5d14ef2b9f30a30fc60ba5b1beb6adb5032804d52c196520a5545c563b6c735f",
+    "results/shard_08/execution_registry.csv": "35a5b3ca7ef3388d5bfa2ffd7396292d616f839e1dc1d84c5d2778372d2fedd9",
+    "results/shard_09/execution_registry.csv": "8caeb06868f11028796b6b9df2e9c8d52da4026e61e7bd6a8a2d37ee1c01f58e"
+  }
+}
