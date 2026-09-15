@@ -1,6 +1,6 @@
 # Historical interim publication record
 
-**Superseded for tuning status:** the complete 450/450 tuning results are now in [results/tuning](../tuning/README.md). The text below records an earlier state, including its then-current authorization status; it is not a statement about current final-phase authorization. Independent final/test results are not included in this update.
+**Historical status — interim September 2026 record, superseded on 14 September 2026 for tuning:** the complete 450/450 tuning results are now in [results/tuning](../tuning/README.md). The text below records an earlier state, including its then-current authorization status; it is not a statement about current final-phase authorization. Independent final/test results are not included in this update.
 
 # Confirmatory results — publication pending
 

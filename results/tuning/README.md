@@ -45,3 +45,7 @@ python -B scripts/summarize_tuning_results.py
 The script is read-only, needs only the Python standard library, validates all 450 identities and all 150 candidate summaries, checks the five selections and prints the summary. It does not train, load checkpoints, or access datasets. It does not replace the original archived merger's checkpoint/hash checks, which already passed during reconstruction.
 
 The older [interim directory](../confirmatory_2026/README.md) is historical. Its snapshots must not be mistaken for the completed tuning state.
+
+## Byte-level hashes and Windows checkouts
+
+Recorded hashes identify the original/archived artifact bytes, including the reconstructed exports as published. Git's automatic line-ending conversion on Windows can change checkout bytes (LF to CRLF), even when the JSON content is equivalent, and consequently cause byte-level validation to fail. A mismatch must be investigated against the original Git blob/archive; do not regenerate the reference hashes or edit result values to make the check pass. Line-ending policy is deferred to a separate technical review; this documentation update changes neither artifacts nor hashes.

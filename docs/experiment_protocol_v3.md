@@ -1,5 +1,8 @@
 ﻿# Protocolo experimental ConvTransformer-v3
 
+> **Historical exploratory work / contexto histórico.** Este documento conserva la preparación inicial de v3 y sus propuestas posteriores; la afirmación de que v3a solo prepara entradas describe aquella primera etapa. El TFM cerrado el 8 de septiembre de 2026 también describe ensayos exploratorios posteriores, cuyos exports completos no forman parte de esta publicación. No se publican métricas de prueba de v3. Estas variantes no son el ConvTransformer de la [campaña confirmatoria completada](../results/tuning/README.md).
+
+
 ## Objetivo de la fase v3
 
 La fase ConvTransformer-v3 introduce una extensión metodológica del modelo ConvTransformer-v2 con el objetivo de estudiar si una representación de entrada más rica puede mejorar posteriormente la detección y la localización de puntos de cambio en trayectorias de difusión anómala.

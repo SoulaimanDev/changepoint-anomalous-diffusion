@@ -1,5 +1,8 @@
 # Confirmatory multi-architecture campaign — September 2026
 
+> **Historical status — 11 September 2026; superseded for tuning on 14 September 2026.** The text below preserves the then-current campaign, authorization and source-availability record. The exact offline archive was subsequently identified and verified, and all 450 tuning runs were accounted for; see [completed tuning and reconstruction](../results/tuning/README.md) and [provenance](../results/tuning/PROVENANCE.md). Statements below about pending audits, missing source packages or publication plans describe that earlier stage. The independent final phase is separate and is not included in this update.
+
+
 ## Scope and status of this record
 
 Campaign: `tfm_campaign_v2`. Status: **in progress**, as reported by the campaign owner for this documentation update on 11 September 2026. This is a supplied validation record, not a live dashboard. No active Pod or campaign file was accessed to prepare it. The reported preflight and GPU checks were not repeated locally.

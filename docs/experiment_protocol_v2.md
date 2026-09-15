@@ -1,5 +1,8 @@
 # Protocolo congelado v2
 
+> **Contexto histórico — experimentos del TFM cerrado el 8 de septiembre de 2026.** `frozen_v2` identifica la ejecución histórica, no el paquete confirmatorio posterior. Se conserva el protocolo original sin cambios; el [tuning confirmatorio completo](../results/tuning/README.md) corresponde a una actualización posterior.
+
+
 Este documento fija la versión experimental utilizada como línea base antes de introducir ConvTransformer-v3, repeticiones con varias semillas o una baseline clásica mediante PELT.
 
 ## Objetivo
