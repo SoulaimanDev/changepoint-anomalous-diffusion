@@ -1,5 +1,8 @@
 # Diagnóstico aislado de xLSTM cfg_01, seed 11
 
+> **Historical status — diagnóstico anterior a la campaña completada.** Las conclusiones y comandos originales se conservan abajo; sus rutas corresponden al workspace de diagnóstico original y no son instrucciones portables desde este clon. La afirmación de que el patch no se había aplicado describe esa etapa, no el código de los 450 runs. La campaña confirmatoria archivada utiliza la corrección numérica correspondiente (limitar la entrada antes de `exp`); los [resultados de tuning publicados](../../results/tuning/README.md) se verificaron separadamente. Este diagnóstico no contiene resultados confirmatorios de rendimiento.
+
+
 Este directorio no pertenece a la campaña oficial. No contiene resultados
 seleccionables, checkpoints de campaña ni archivos `run.json` oficiales.
 No se ha aplicado el patch numérico ni gradient clipping.

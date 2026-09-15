@@ -1,5 +1,8 @@
 # RunPod reproducibility record
 
+> **Historical status — September 2026 preparation record.** References below to "this branch" or "this documentation commit" describe the earlier documentation-only publication, not all files now in `main`. The later offline reconstruction and completed 450-run checks are documented in [current tuning provenance](../results/tuning/PROVENANCE.md). The operational record is preserved; the independent final phase is not included in this update.
+
+
 This document describes operational safeguards reported by the campaign owner for `tfm_campaign_v2`. It does not provide instructions to operate the active Pods. Scientific scope, supplied hashes and environment versions are recorded in [the campaign document](confirmatory_campaign_2026.md).
 
 ## Preparation and validation
