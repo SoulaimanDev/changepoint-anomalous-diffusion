@@ -1,6 +1,6 @@
 # Changepoint Detection in Anomalous Diffusion
 
-Historical experiment code and verified tuning and validation-calibration exports for the September 2026 Master's thesis on changepoint detection and temporal localization in synthetic anomalous-diffusion trajectories.
+Historical experiment code and verified tuning, validation-calibration and independent-test exports for the September 2026 Master's thesis on changepoint detection and temporal localization in synthetic anomalous-diffusion trajectories.
 
 The scientific objective is deliberately narrow: given a one-dimensional trajectory generated from anomalous-diffusion processes, decide whether it contains one model transition and, when a transition is present, estimate its temporal position. The repository does not claim to identify the diffusion model or infer the anomalous exponent inside each segment.
 
@@ -11,7 +11,7 @@ The reference scientific manuscript was closed on **8 September 2026**. The thes
 - **Historical experiments from the thesis:** retained results and their scripts/notebooks, under the individual historical protocols.
 - **Completed confirmatory tuning:** 450 validation-based runs and the selected configurations, with a lightweight script to validate the published exports and reproduce their summaries.
 - **Completed final training / validation-calibration:** the 16 September 2026 backup contains 25/25 runs with seeds `1, 2, 3, 42, 123`; sealed calibration metrics are now published separately.
-- **Independent held-out test:** a separate subsequent phase, with no data or results included in this update.
+- **Independent held-out test:** 25 completed evaluations with the pre-test frozen models and thresholds, published separately from training/calibration in the 16 September 2026 test archive.
 
 Reproduction has three distinct scopes. The published tuning exports can be checked locally without training or datasets. Historical experiments have scripts/notebooks, but require their data and compatible dependencies. The exact confirmatory campaign code, frozen configurations and environment are retained in the separately verified scientific archive and are not fully exposed in `main`; this public repository alone does not currently reproduce all 450 training runs. See [provenance](results/tuning/PROVENANCE.md).
 
@@ -31,7 +31,7 @@ The verified backup dated 14 September 2026 contains **450/450 completed tuning 
 
 ConvTransformer achieved the highest mean validation F1 among the evaluated configurations under the frozen tuning protocol. This does not prove general superiority, constitute an independent final performance estimate, or by itself constitute a statistical significance test.
 
-These are **validation/tuning results**, used to select one configuration per architecture. They are **not final test results**. The subsequent [25-run training/calibration results](results/final_validation_2026/README.md) are published separately; independent test evaluation is not included. No final test data were used during tuning.
+These are **validation/tuning results**, used to select one configuration per architecture. They are **not final test results**. The subsequent [25-run training/calibration results](results/final_validation_2026/README.md) are published separately; [independent held-out test results](results/independent_test_2026/README.md) are now published in a distinct directory. No final test data were used during tuning.
 
 The earlier [campaign record](docs/confirmatory_campaign_2026.md), [infrastructure documentation](docs/runpod_reproducibility.md) and [interim results directory](results/confirmatory_2026/README.md) preserve historical context; earlier progress snapshots are superseded by the completed tuning state above. Historical experimental results below remain unchanged.
 
@@ -49,7 +49,7 @@ These five campaign architectures are distinct from the four historical implemen
 
 ## Completed final training / validation-calibration — 25 runs
 
-The verified backup dated **16 September 2026** contains **25/25 completed runs, 0 failed**, using the five configurations selected above and seeds `1, 2, 3, 42, 123` for each. Thresholds were calibrated on validation_calibration and frozen. **These are NOT independent test results.** The independent held-out test is a separate subsequent phase and is excluded.
+The verified backup dated **16 September 2026** contains **25/25 completed runs, 0 failed**, using the five configurations selected above and seeds `1, 2, 3, 42, 123` for each. Thresholds were calibrated on validation_calibration and frozen. **These are NOT independent test results.** The subsequent [independent held-out test](results/independent_test_2026/README.md) is published separately; its metrics are not mixed into this calibration table.
 
 | Architecture | Configuration | Seeds | F1 mean ± std | MAE_all mean ± std | FPR mean ± std |
 |---|---|---:|---:|---:|---:|
@@ -60,6 +60,20 @@ The verified backup dated **16 September 2026** contains **25/25 completed runs,
 | ConvTransformer | cfg_12 | 5 | 0.799563 ± 0.005949 | 7.294523 ± 0.238058 | 0.195240 ± 0.003971 |
 
 Mean ± sample standard deviation (`ddof=1`, five seeds), computed from the sealed validation-calibration metrics. ConvTransformer obtained the highest observed mean validation-calibration F1 under this protocol; this does not establish general superiority, statistical significance or independent-test generalization. See [per-run metrics, provenance and validation](results/final_validation_2026/README.md). The preceding tuning table is unchanged and uses a different validation split and seed set.
+
+## Independent held-out test — 25 frozen models
+
+The verified test archive dated **16 September 2026** contains **25/25 completed evaluations** of the previously selected configurations, using seeds `1, 2, 3, 42, 123`. All 25 recorded seal hashes and thresholds match the pre-test validation-calibration provenance. No model or threshold was changed using the test.
+
+| Architecture | f1 | fpr | mae_all |
+|---|---:|---:|---:|
+| LSTM | 0.796939 ± 0.001376 | 0.191380 ± 0.003851 | 9.260193 ± 0.092847 |
+| xLSTM | 0.791724 ± 0.002578 | 0.184418 ± 0.007154 | 9.670149 ± 0.146424 |
+| CNN-LSTM | 0.792946 ± 0.001461 | 0.180558 ± 0.002992 | 7.593484 ± 0.041192 |
+| Transformer | 0.797062 ± 0.006503 | 0.188006 ± 0.004397 | 7.675603 ± 0.177171 |
+| ConvTransformer | 0.805349 ± 0.002929 | 0.191190 ± 0.003967 | 7.286198 ± 0.211986 |
+
+Mean ± sample SD (`ddof=1`, five seeds). ConvTransformer achieved the highest observed mean F1 on the independent test under the experimental protocol considered. This does not establish universal superiority or statistical significance. See [all nine metrics, 25 individual runs, provenance and the separate validation/test comparison](results/independent_test_2026/README.md). The earlier tuning and calibration tables remain unchanged.
 
 ## Essential scientific references
 
@@ -232,6 +246,7 @@ ConvTransformer-v3a uses six signal-derived input channels; v3b adds Gaussian so
 |-- results/
 |   |-- tuning/                      # complete 450-run tuning exports
 |   |-- final_validation_2026/        # 25 sealed training/calibration runs, not test
+|   |-- independent_test_2026/        # 25 held-out evaluations with frozen thresholds
 |   |-- confirmatory_2026/           # superseded interim publication record
 |   |-- frozen_v2/
 |   |-- final_tfm_additions/          # historical thesis additions, not final 25 runs
@@ -257,6 +272,7 @@ Validate the published tuning exports using only the Python standard library, wi
 ```bash
 python -B scripts/summarize_tuning_results.py
 python -B scripts/summarize_final_validation_results.py
+python -B scripts/summarize_independent_test_results.py
 ```
 
 ### Historical experiment environment
@@ -361,9 +377,9 @@ For the `L=200` workflow, run notebook `12_synthetic_dataset_binary_changepoint_
 
 ## Future work
 
-Future studies should evaluate shorter trajectories (approximately 10–50 steps), more realistic noise conditions and experimental SPT data. The confirmatory protocol defined in the thesis's Appendix C provides a methodological basis: multi-seed comparisons, more comparable search spaces, validation-only selection and an independent final test after decisions are frozen. Appendix C is a protocol, not a result; the 450-run tuning and 25-run final training/calibration stages are complete and published separately; the independent held-out test evaluation remains outside this update.
+Future studies should evaluate shorter trajectories (approximately 10–50 steps), more realistic noise conditions and experimental SPT data. The confirmatory protocol defined in the thesis's Appendix C provides a methodological basis: multi-seed comparisons, more comparable search spaces, validation-only selection and an independent final test after decisions are frozen. Appendix C is a protocol, not a result; the 450-run tuning and 25-run final training/calibration stages are complete and published separately; the subsequent independent held-out test is now published in its own directory without changing earlier selections.
 
-The completed confirmatory study may provide the basis for a future manuscript once the independent final evaluation is complete.
+The completed confirmatory study, including the independent evaluation, may provide a basis for a future manuscript after scientific review; no submission or acceptance is claimed.
 
 ## Author
 
