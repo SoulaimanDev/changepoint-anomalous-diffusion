@@ -2,7 +2,7 @@
 
 The archived campaign completed **450/450 tuning runs**, with **0 failed**: five architectures, 30 configurations each, seeds **11, 29, 47**, 90 runs per architecture, and 10 shards of 45 runs. This is the complete tuning state in the backup dated **14 September 2026**.
 
-Training used train and validation_tuning only. No final test data or final test results are included. These validation/tuning results select one configuration per architecture; they are not the independent final evaluation. The separate 25-run final phase and subsequent test evaluation are outside this export.
+Training used train and validation_tuning only. No final test data or final test results are included. These validation/tuning results select one configuration per architecture; they are not the independent final evaluation. The separate [25-run final training/validation-calibration phase](../final_validation_2026/README.md) is now published in its own directory. Those metrics do not replace this tuning export; independent test evaluation remains excluded.
 
 ## Selected configurations
 
